@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>清关通 关务管理系统 - 主页</title>
+    <meta name="keywords" content="清关通 关务管理系统">
+    <meta name="description" content="清关通 关务管理系统">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css?v=4.0.0" rel="stylesheet"><base target="_blank">
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+    <link href="css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="css/style-self.css" rel="stylesheet">
+
+    <!-- css loading -->
+    <link rel="stylesheet" type="text/css" href="css/loading.css" />
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>内联表单</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="form_basic.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="form_basic.html#">选项1</a>
+                            </li>
+                            <li><a href="form_basic.html#">选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <form role="form">
+                        <div class="form-inline">
+                            <div class="form-group m-r-xs">
+                                <label>用户名</label>
+                                <input type="email" placeholder="请输入用户名" class="form-control">
+                            </div>
+                            <div class="form-group m-r-xs">
+                                <label>密码</label>
+                                <input type="password" placeholder="请输入密码" class="form-control">
+                            </div>
+                            <div class="form-group m-r-xs" id="data_1">
+                                <label>日期选择</label>
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    <input type="text" class="form-control" value="2014-11-11">
+                                </div>
+                            </div>
+                            <div class="form-group m-r-xs" id="data_5">
+                                <label>范围选择</label>
+                                <div class="input-daterange input-group date" id="datepicker">
+                                    <span class="input-group-addon date-icon"><i class="fa fa-calendar"></i></span>
+                                    <input type="text" class="form-control" name="start" value="2014-11-11">
+                                    <span class="input-group-addon">到</span>
+                                    <span class="input-group-addon date-icon"><i class="fa fa-calendar"></i></span>
+                                    <input type="text" class="form-control" name="end" value="2014-11-17">
+                                </div>
+                            </div>
+
+                            <div class="form-group m-r-xs">
+                                <label>下拉选择</label>
+                                <select class="form-control" name="account">
+                                    <option>选项 1</option>
+                                    <option>选项 2</option>
+                                    <option>选项 3</option>
+                                    <option>选项 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-inline btn-btm-block">
+                            <button class="btn btn-primary" type="button">查询</button>
+                            <button class="btn btn-info" type="button">编辑</button>
+                            <button class="btn btn-default" type="button">确定</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>多行内联表单</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="form_basic.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="form_basic.html#">选项1</a>
+                            </li>
+                            <li><a href="form_basic.html#">选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <form role="form">
+                        <div class="form-inline row-multi">
+                            <div class="form-group m-r-xs">
+                                <label>用户名</label>
+                                <input type="email" placeholder="请输入用户名" class="form-control">
+                            </div>
+                            <div class="form-group m-r-xs">
+                                <label>密码</label>
+                                <input type="password" placeholder="请输入密码" class="form-control">
+                            </div>
+                            <div class="form-group m-r-xs"id="data_2">
+                                <label>日期选择</label>
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    <input type="text" class="form-control" value="2014-11-11">
+                                </div>
+                            </div>
+                            <div class="form-group m-r-xs">
+                                <label>下拉选择</label>
+                                <select class="form-control" name="account">
+                                    <option>选项 1</option>
+                                    <option>选项 2</option>
+                                    <option>选项 3</option>
+                                    <option>选项 4</option>
+                                </select>
+                            </div>
+                            <div class="form-group m-r-xs">
+                                <label>密码</label>
+                                <input type="password" placeholder="请输入密码" class="form-control">
+                            </div>
+                            <div class="form-group m-r-xs">
+                                <label>密码</label>
+                                <input type="password" placeholder="请输入密码" class="form-control">
+                            </div>
+                            <div class="form-group m-r-xs">
+                                <label>密码</label>
+                                <input type="password" placeholder="请输入密码" class="form-control">
+                            </div>
+                            <div class="form-group m-r-xs">
+                                <label>密码</label>
+                                <input type="password" placeholder="请输入密码" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-inline btn-btm-block">
+                            <button class="btn btn-primary" type="button">查询</button>
+                            <button class="btn btn-info" type="button">编辑</button>
+                            <button class="btn btn-default" type="button">确定</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>图标按钮 </h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="buttons.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="buttons.html#">选项1</a>
+                            </li>
+                            <li><a href="buttons.html#">选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <p>
+                        任何按钮都可以在左侧或右侧添加图标
+                    </p>
+
+                    <h3 class="font-bold">图标按钮</h3>
+                    <p>
+                        <button class="btn btn-primary " type="button"><i class="fa fa-check"></i>&nbsp;提交</button>
+                        <button class="btn btn-primary " type="button"><i class="fa fa-plus"></i>&nbsp;添加</button>
+                        <button class="btn btn-success " type="button"><i class="fa fa-upload"></i>&nbsp;&nbsp;<span class="bold">上传</span></button>
+                        <button class="btn btn-info " type="button"><i class="fa fa-paste"></i> 编辑</button>
+                        <button class="btn btn-warning " type="button"><i class="fa fa-warning"></i> <span class="bold">警告</span></button>
+                        <button class="btn btn-danger " type="button"><i class="fa fa-times"></i> <span class="bold">删除</span></button>
+                        <button class="btn btn-default " type="button"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;百度地图</button>
+
+                        <a class="btn btn-success">
+                            <i class="fa fa-weixin"> </i> 分享到微信
+                        </a>
+                        <a class="btn btn-success btn-outline">
+                            <i class="fa fa-qq"> </i> 使用QQ账号登录
+                        </a>
+                        <a class="btn btn-white btn-bitbucket">
+                            <i class="fa fa-user-md"></i>
+                        </a>
+                        <a class="btn btn-white btn-bitbucket">
+                            <i class="fa fa-group"></i>
+                        </a>
+                        <a class="btn btn-white btn-bitbucket">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <a class="btn btn-white btn-bitbucket">
+                            <i class="fa fa-exchange"></i>
+                        </a>
+                        <a class="btn btn-white btn-bitbucket">
+                            <i class="fa fa-check-circle-o"></i>
+                        </a>
+                        <a class="btn btn-white btn-bitbucket">
+                            <i class="fa fa-road"></i>
+                        </a>
+                        <a class="btn btn-white btn-bitbucket">
+                            <i class="fa fa-ambulance"></i>
+                        </a>
+                        <a class="btn btn-white btn-bitbucket">
+                            <i class="fa fa-star"></i> 收藏
+                        </a>
+                    </p>
+
+
+                    <h3 class="font-bold">普通按钮</h3>
+                    <p>
+                        <button type="button" class="btn btn-w-m btn-default">btn-default</button>
+                        <button type="button" class="btn btn-w-m btn-primary">btn-primary</button>
+                        <button type="button" class="btn btn-w-m btn-success">btn-success</button>
+                        <button type="button" class="btn btn-w-m btn-info">btn-info</button>
+                        <button type="button" class="btn btn-w-m btn-warning">btn-warning</button>
+                        <button type="button" class="btn btn-w-m btn-danger">btn-danger</button>
+                        <button type="button" class="btn btn-w-m btn-white">btn-white</button>
+                        <button type="button" class="btn btn-w-m btn-link">btn-link</button>
+                    </p>
+
+
+                    <h3 class="font-bold">按钮尺寸</h3>
+                    <p>
+                        <button type="button" class="btn btn-primary btn-lg">大按钮</button>
+                        <button type="button" class="btn btn-default btn-lg">大按钮</button>
+                        <br/>
+                        <button type="button" class="btn btn-primary">默认按钮</button>
+                        <button type="button" class="btn btn-default">默认按钮</button>
+                        <br/>
+                        <button type="button" class="btn btn-primary btn-sm">小按钮</button>
+                        <button type="button" class="btn btn-default btn-sm">小按钮</button>
+                        <br/>
+                        <button type="button" class="btn btn-primary btn-xs">Mini按钮</button>
+                        <button type="button" class="btn btn-default btn-xs">Mini按钮</button>
+                    </p>
+
+                    <h3 class="font-bold">按钮组</h3>
+                    <div class="btn-group">
+                        <button class="btn btn-white" type="button">左</button>
+                        <button class="btn btn-primary" type="button">中</button>
+                        <button class="btn btn-white" type="button">右</button>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-white"><i class="fa fa-chevron-left"></i>
+                        </button>
+                        <button class="btn btn-white">1</button>
+                        <button class="btn btn-white  active">2</button>
+                        <button class="btn btn-white">3</button>
+                        <button class="btn btn-white">4</button>
+                        <button type="button" class="btn btn-white"><i class="fa fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>所有表单元素 <small>包括自定义样式的复选和单选按钮</small></h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="form_basic.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="form_basic.html#">选项1</a>
+                            </li>
+                            <li><a href="form_basic.html#">选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <form method="get" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">普通</label>
+
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">带说明信息</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control"> <span class="help-block m-b-none">帮助文本，可能会超过一行，以块级元素显示</span>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">密码</label>
+
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" name="password">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">提示</label>
+
+                            <div class="col-sm-10">
+                                <input type="text" placeholder="提示信息" class="form-control">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">禁用</label>
+
+                            <div class="col-sm-10">
+                                <input type="text" disabled="" placeholder="已被禁用" class="form-control">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">静态控制</label>
+
+                            <div class="col-sm-10">
+                                <p class="form-control-static">i@zi-han.net</p>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">复选框&amp;单选框
+                                <br/><small class="text-navy">自定义样式</small>
+                            </label>
+
+                            <div class="col-sm-10">
+                                <div class="checkbox i-checks">
+                                    <label>
+                                        <input type="checkbox" value=""> <i></i> 选项1</label>
+                                </div>
+                                <div class="checkbox i-checks">
+                                    <label>
+                                        <input type="checkbox" value="" checked=""> <i></i> 选项2（选中）</label>
+                                </div>
+                                <div class="checkbox i-checks">
+                                    <label>
+                                        <input type="checkbox" value="" disabled="" checked=""> <i></i> 选项3（选中并禁用）</label>
+                                </div>
+                                <div class="checkbox i-checks">
+                                    <label>
+                                        <input type="checkbox" value="" disabled=""> <i></i> 选项4（禁用）</label>
+                                </div>
+                                <div class="radio i-checks">
+                                    <label>
+                                        <input type="radio" value="option1" name="a"> <i></i> 选项1</label>
+                                </div>
+                                <div class="radio i-checks">
+                                    <label>
+                                        <input type="radio" checked="" value="option2" name="a"> <i></i> 选项2（选中）</label>
+                                </div>
+                                <div class="radio i-checks">
+                                    <label>
+                                        <input type="radio" disabled="" checked="" value="option2"> <i></i> 选项3（选中并禁用）</label>
+                                </div>
+                                <div class="radio i-checks">
+                                    <label>
+                                        <input type="radio" disabled="" name="a"> <i></i> 选项4（禁用）</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">内联复选框</label>
+
+                            <div class="col-sm-10">
+                                <label class="checkbox-inline i-checks">
+                                    <input type="checkbox" value="option1">a</label>
+                                <label class="checkbox-inline i-checks">
+                                    <input type="checkbox" value="option2">b</label>
+                                <label class="checkbox-inline i-checks">
+                                    <input type="checkbox" value="option3">c</label>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Select</label>
+
+                            <div class="col-sm-10">
+                                <select class="form-control m-b" name="account">
+                                    <option>选项 1</option>
+                                    <option>选项 2</option>
+                                    <option>选项 3</option>
+                                    <option>选项 4</option>
+                                </select>
+
+                                <div class="col-sm-4 m-l-n">
+                                    <select class="form-control" multiple="">
+                                        <option>选项 1</option>
+                                        <option>选项 2</option>
+                                        <option>选项 3</option>
+                                        <option>选项 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group has-success">
+                            <label class="col-sm-2 control-label">验证通过</label>
+
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group has-warning">
+                            <label class="col-sm-2 control-label">未填写</label>
+
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group has-error">
+                            <label class="col-sm-2 control-label">验证未通过</label>
+
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">自定义尺寸</label>
+
+                            <div class="col-sm-10">
+                                <input type="text" placeholder=".input-lg" class="form-control input-lg m-b">
+                                <input type="text" placeholder="Default input" class="form-control m-b">
+                                <input type="text" placeholder=".input-sm" class="form-control input-sm">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">列尺寸</label>
+
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <input type="text" placeholder=".col-md-2" class="form-control">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input type="text" placeholder=".col-md-3" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" placeholder=".col-md-4" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">文本框组</label>
+
+                            <div class="col-sm-10">
+                                <div class="input-group m-b"><span class="input-group-addon">@</span>
+                                    <input type="text" placeholder="用户名" class="form-control">
+                                </div>
+                                <div class="input-group m-b">
+                                    <input type="text" class="form-control"> <span class="input-group-addon">.00</span>
+                                </div>
+                                <div class="input-group m-b"><span class="input-group-addon">&yen;</span>
+                                    <input type="text" class="form-control"> <span class="input-group-addon">.00</span>
+                                </div>
+                                <div class="input-group m-b"><span class="input-group-addon"> <input type="checkbox"> </span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group"><span class="input-group-addon"> <input type="radio"> </span>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">按钮插件</label>
+
+                            <div class="col-sm-10">
+                                <div class="input-group m-b"><span class="input-group-btn">
+                                            <button type="button" class="btn btn-primary">搜</button> </span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control"> <span class="input-group-btn"> <button type="button" class="btn btn-primary">搜索
+                                        </button> </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">带下拉框</label>
+
+                            <div class="col-sm-10">
+                                <div class="input-group m-b">
+                                    <div class="input-group-btn">
+                                        <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">操作 <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="form_basic.html#">选项1</a>
+                                            </li>
+                                            <li><a href="form_basic.html#">选项2</a>
+                                            </li>
+                                            <li><a href="form_basic.html#">选项3</a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li><a href="form_basic.html#">选项4</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+
+                                    <div class="input-group-btn">
+                                        <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">操作 <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li><a href="form_basic.html#">选项1</a>
+                                            </li>
+                                            <li><a href="form_basic.html#">选项2</a>
+                                            </li>
+                                            <li><a href="form_basic.html#">选项3</a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li><a href="form_basic.html#">选项4</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">分段</label>
+
+                            <div class="col-sm-10">
+                                <div class="input-group m-b">
+                                    <div class="input-group-btn">
+                                        <button tabindex="-1" class="btn btn-white" type="button">操作</button>
+                                        <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="form_basic.html#">选项1</a>
+                                            </li>
+                                            <li><a href="form_basic.html#">选项2</a>
+                                            </li>
+                                            <li><a href="form_basic.html#">选项3</a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li><a href="form_basic.html#">选项4</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+
+                                    <div class="input-group-btn">
+                                        <button tabindex="-1" class="btn btn-white" type="button">操作</button>
+                                        <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu pull-right">
+                                            分段
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <button class="btn btn-primary" type="submit">保存内容</button>
+                                <button class="btn btn-white" type="submit">取消</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>基本 <small>分类，查找</small></h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="table_data_tables.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="table_data_tables.html#">选项1</a>
+                            </li>
+                            <li><a href="table_data_tables.html#">选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+
+                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                        <thead>
+                        <tr>
+                            <th>渲染引擎</th>
+                            <th>浏览器</th>
+                            <th>平台</th>
+                            <th>引擎版本</th>
+                            <th>CSS等级</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="gradeX">
+                            <td>Trident</td>
+                            <td>Internet Explorer 4.0
+                            </td>
+                            <td>Win 95+</td>
+                            <td class="center">4</td>
+                            <td class="center">X</td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>Trident</td>
+                            <td>Internet Explorer 5.0
+                            </td>
+                            <td>Win 95+</td>
+                            <td class="center">5</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>Internet Explorer 5.5
+                            </td>
+                            <td>Win 95+</td>
+                            <td class="center">5.5</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>Internet Explorer 6
+                            </td>
+                            <td>Win 98+</td>
+                            <td class="center">6</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>Internet Explorer 7</td>
+                            <td>Win XP SP2+</td>
+                            <td class="center">7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>AOL browser (AOL desktop)</td>
+                            <td>Win XP</td>
+                            <td class="center">6</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Firefox 1.0</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Firefox 1.5</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Firefox 2.0</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Firefox 3.0</td>
+                            <td>Win 2k+ / OSX.3+</td>
+                            <td class="center">1.9</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Camino 1.0</td>
+                            <td>OSX.2+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Camino 1.5</td>
+                            <td>OSX.3+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Netscape 7.2</td>
+                            <td>Win 95+ / Mac OS 8.6-9.2</td>
+                            <td class="center">1.7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Netscape Browser 8</td>
+                            <td>Win 98SE+</td>
+                            <td class="center">1.7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Netscape Navigator 9</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.0</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.1</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1.1</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.2</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1.2</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.3</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1.3</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.4</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1.4</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.5</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1.5</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.6</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1.6</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.7</td>
+                            <td>Win 98+ / OSX.1+</td>
+                            <td class="center">1.7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.8</td>
+                            <td>Win 98+ / OSX.1+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Seamonkey 1.1</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Epiphany 2.20</td>
+                            <td>Gnome</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>Safari 1.2</td>
+                            <td>OSX.3</td>
+                            <td class="center">125.5</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>Safari 1.3</td>
+                            <td>OSX.3</td>
+                            <td class="center">312.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>Safari 2.0</td>
+                            <td>OSX.4+</td>
+                            <td class="center">419.3</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>Safari 3.0</td>
+                            <td>OSX.4+</td>
+                            <td class="center">522.1</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>OmniWeb 5.5</td>
+                            <td>OSX.4+</td>
+                            <td class="center">420</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>iPod Touch / iPhone</td>
+                            <td>iPod</td>
+                            <td class="center">420.1</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>S60</td>
+                            <td>S60</td>
+                            <td class="center">413</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 7.0</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 7.5</td>
+                            <td>Win 95+ / OSX.2+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 8.0</td>
+                            <td>Win 95+ / OSX.2+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 8.5</td>
+                            <td>Win 95+ / OSX.2+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 9.0</td>
+                            <td>Win 95+ / OSX.3+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 9.2</td>
+                            <td>Win 88+ / OSX.3+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 9.5</td>
+                            <td>Win 88+ / OSX.3+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera for Wii</td>
+                            <td>Wii</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Nokia N800</td>
+                            <td>N800</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Nintendo DS browser</td>
+                            <td>Nintendo DS</td>
+                            <td class="center">8.5</td>
+                            <td class="center">C/A<sup>1</sup>
+                            </td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>KHTML</td>
+                            <td>Konqureror 3.1</td>
+                            <td>KDE 3.1</td>
+                            <td class="center">3.1</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>KHTML</td>
+                            <td>Konqureror 3.3</td>
+                            <td>KDE 3.3</td>
+                            <td class="center">3.3</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>KHTML</td>
+                            <td>Konqureror 3.5</td>
+                            <td>KDE 3.5</td>
+                            <td class="center">3.5</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeX">
+                            <td>Tasman</td>
+                            <td>Internet Explorer 4.5</td>
+                            <td>Mac OS 8-9</td>
+                            <td class="center">-</td>
+                            <td class="center">X</td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>Tasman</td>
+                            <td>Internet Explorer 5.1</td>
+                            <td>Mac OS 7.6-9</td>
+                            <td class="center">1</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>Tasman</td>
+                            <td>Internet Explorer 5.2</td>
+                            <td>Mac OS 8-X</td>
+                            <td class="center">1</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Misc</td>
+                            <td>NetFront 3.1</td>
+                            <td>Embedded devices</td>
+                            <td class="center">-</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Misc</td>
+                            <td>NetFront 3.4</td>
+                            <td>Embedded devices</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeX">
+                            <td>Misc</td>
+                            <td>Dillo 0.8</td>
+                            <td>Embedded devices</td>
+                            <td class="center">-</td>
+                            <td class="center">X</td>
+                        </tr>
+                        <tr class="gradeX">
+                            <td>Misc</td>
+                            <td>Links</td>
+                            <td>Text only</td>
+                            <td class="center">-</td>
+                            <td class="center">X</td>
+                        </tr>
+                        <tr class="gradeX">
+                            <td>Misc</td>
+                            <td>Lynx</td>
+                            <td>Text only</td>
+                            <td class="center">-</td>
+                            <td class="center">X</td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>Misc</td>
+                            <td>IE Mobile</td>
+                            <td>Windows Mobile 6</td>
+                            <td class="center">-</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>Misc</td>
+                            <td>PSP browser</td>
+                            <td>PSP</td>
+                            <td class="center">-</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeU">
+                            <td>Other browsers</td>
+                            <td>All others</td>
+                            <td>-</td>
+                            <td class="center">-</td>
+                            <td class="center">U</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <th>渲染引擎</th>
+                            <th>浏览器</th>
+                            <th>平台</th>
+                            <th>引擎版本</th>
+                            <th>CSS等级</th>
+                        </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>可编辑表格</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="table_data_tables.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="table_data_tables.html#">选项1</a>
+                            </li>
+                            <li><a href="table_data_tables.html#">选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="">
+                        <a onclick="fnClickAddRow();" href="javascript:void(0);" class="btn btn-primary ">添加行</a>
+                    </div>
+                    <table class="table table-striped table-bordered table-hover " id="editable">
+                        <thead>
+                        <tr>
+                            <th>渲染引擎</th>
+                            <th>浏览器</th>
+                            <th>平台</th>
+                            <th>引擎版本</th>
+                            <th>CSS等级</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="gradeX">
+                            <td>Trident</td>
+                            <td>Internet Explorer 4.0
+                            </td>
+                            <td>Win 95+</td>
+                            <td class="center">4</td>
+                            <td class="center">X</td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>Trident</td>
+                            <td>Internet Explorer 5.0
+                            </td>
+                            <td>Win 95+</td>
+                            <td class="center">5</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>Internet Explorer 5.5
+                            </td>
+                            <td>Win 95+</td>
+                            <td class="center">5.5</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>Internet Explorer 6
+                            </td>
+                            <td>Win 98+</td>
+                            <td class="center">6</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>Internet Explorer 7</td>
+                            <td>Win XP SP2+</td>
+                            <td class="center">7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>AOL browser (AOL desktop)</td>
+                            <td>Win XP</td>
+                            <td class="center">6</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Firefox 1.0</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Firefox 1.5</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Firefox 2.0</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Firefox 3.0</td>
+                            <td>Win 2k+ / OSX.3+</td>
+                            <td class="center">1.9</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Camino 1.0</td>
+                            <td>OSX.2+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Camino 1.5</td>
+                            <td>OSX.3+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Netscape 7.2</td>
+                            <td>Win 95+ / Mac OS 8.6-9.2</td>
+                            <td class="center">1.7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Netscape Browser 8</td>
+                            <td>Win 98SE+</td>
+                            <td class="center">1.7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Netscape Navigator 9</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.0</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.1</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1.1</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.2</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1.2</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.3</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1.3</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.4</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1.4</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.5</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1.5</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.6</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">1.6</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.7</td>
+                            <td>Win 98+ / OSX.1+</td>
+                            <td class="center">1.7</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Mozilla 1.8</td>
+                            <td>Win 98+ / OSX.1+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Seamonkey 1.1</td>
+                            <td>Win 98+ / OSX.2+</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Gecko</td>
+                            <td>Epiphany 2.20</td>
+                            <td>Gnome</td>
+                            <td class="center">1.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>Safari 1.2</td>
+                            <td>OSX.3</td>
+                            <td class="center">125.5</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>Safari 1.3</td>
+                            <td>OSX.3</td>
+                            <td class="center">312.8</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>Safari 2.0</td>
+                            <td>OSX.4+</td>
+                            <td class="center">419.3</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>Safari 3.0</td>
+                            <td>OSX.4+</td>
+                            <td class="center">522.1</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>OmniWeb 5.5</td>
+                            <td>OSX.4+</td>
+                            <td class="center">420</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>iPod Touch / iPhone</td>
+                            <td>iPod</td>
+                            <td class="center">420.1</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Webkit</td>
+                            <td>S60</td>
+                            <td>S60</td>
+                            <td class="center">413</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 7.0</td>
+                            <td>Win 95+ / OSX.1+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 7.5</td>
+                            <td>Win 95+ / OSX.2+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 8.0</td>
+                            <td>Win 95+ / OSX.2+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 8.5</td>
+                            <td>Win 95+ / OSX.2+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 9.0</td>
+                            <td>Win 95+ / OSX.3+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 9.2</td>
+                            <td>Win 88+ / OSX.3+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera 9.5</td>
+                            <td>Win 88+ / OSX.3+</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Opera for Wii</td>
+                            <td>Wii</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Nokia N800</td>
+                            <td>N800</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Presto</td>
+                            <td>Nintendo DS browser</td>
+                            <td>Nintendo DS</td>
+                            <td class="center">8.5</td>
+                            <td class="center">C/A<sup>1</sup>
+                            </td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>KHTML</td>
+                            <td>Konqureror 3.1</td>
+                            <td>KDE 3.1</td>
+                            <td class="center">3.1</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>KHTML</td>
+                            <td>Konqureror 3.3</td>
+                            <td>KDE 3.3</td>
+                            <td class="center">3.3</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>KHTML</td>
+                            <td>Konqureror 3.5</td>
+                            <td>KDE 3.5</td>
+                            <td class="center">3.5</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeX">
+                            <td>Tasman</td>
+                            <td>Internet Explorer 4.5</td>
+                            <td>Mac OS 8-9</td>
+                            <td class="center">-</td>
+                            <td class="center">X</td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>Tasman</td>
+                            <td>Internet Explorer 5.1</td>
+                            <td>Mac OS 7.6-9</td>
+                            <td class="center">1</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>Tasman</td>
+                            <td>Internet Explorer 5.2</td>
+                            <td>Mac OS 8-X</td>
+                            <td class="center">1</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Misc</td>
+                            <td>NetFront 3.1</td>
+                            <td>Embedded devices</td>
+                            <td class="center">-</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Misc</td>
+                            <td>NetFront 3.4</td>
+                            <td>Embedded devices</td>
+                            <td class="center">-</td>
+                            <td class="center">A</td>
+                        </tr>
+                        <tr class="gradeX">
+                            <td>Misc</td>
+                            <td>Dillo 0.8</td>
+                            <td>Embedded devices</td>
+                            <td class="center">-</td>
+                            <td class="center">X</td>
+                        </tr>
+                        <tr class="gradeX">
+                            <td>Misc</td>
+                            <td>Links</td>
+                            <td>Text only</td>
+                            <td class="center">-</td>
+                            <td class="center">X</td>
+                        </tr>
+                        <tr class="gradeX">
+                            <td>Misc</td>
+                            <td>Lynx</td>
+                            <td>Text only</td>
+                            <td class="center">-</td>
+                            <td class="center">X</td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>Misc</td>
+                            <td>IE Mobile</td>
+                            <td>Windows Mobile 6</td>
+                            <td class="center">-</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeC">
+                            <td>Misc</td>
+                            <td>PSP browser</td>
+                            <td>PSP</td>
+                            <td class="center">-</td>
+                            <td class="center">C</td>
+                        </tr>
+                        <tr class="gradeU">
+                            <td>Other browsers</td>
+                            <td>All others</td>
+                            <td>-</td>
+                            <td class="center">-</td>
+                            <td class="center">U</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <th>渲染引擎</th>
+                            <th>浏览器</th>
+                            <th>平台</th>
+                            <th>引擎版本</th>
+                            <th>CSS等级</th>
+                        </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>模态框</h5>
+
+                </div>
+                <div class="ibox-content">
+                    <p>
+                        模态窗口提供两种大小尺寸，可以通过为模态窗口的<code>.modal-dialog</code>添加类来实现
+                    </p>
+
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
+                            大模态窗口
+                        </button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">
+                            小模态窗口
+                        </button>
+
+                        <a onclick="$('#loading').css('display','block');" href="javascript:void(0);" class="btn btn-primary" >loading</a>
+                    </div>
+                    <div class="modal inmodal fade" id="myModal5" tabindex="-1" role="dialog"  aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title">窗口标题</h4>
+                                    <small class="font-bold">这里可以显示副标题。
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>H+</strong> 是一个完全响应式，基于Bootstrap3.3.5最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术，她提供了诸多的强大的可以重新组合的UI组件，并集成了最新的jQuery版本(v2.1.1)，当然，也集成了很多功能强大，用途广泛的jQuery插件，她可以用于所有的Web应用程序，如网站管理后台，网站会员中心，CMS，CRM，OA等等，当然，您也可以对她进行深度定制，以做出更强系统。</p>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                    <button type="button" class="btn btn-primary">保存</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal inmodal fade" id="myModal6" tabindex="-1" role="dialog"  aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title">窗口标题</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>H+</strong> 是一个完全响应式，基于Bootstrap3.3.5最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术，她提供了诸多的强大的可以重新组合的UI组件，并集成了最新的jQuery版本(v2.1.1)，当然，也集成了很多功能强大，用途广泛的jQuery插件，她可以用于所有的Web应用程序，如网站管理后台，网站会员中心，CMS，CRM，OA等等，当然，您也可以对她进行深度定制，以做出更强系统。</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                    <button type="button" class="btn btn-primary">保存</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="loading" style="display: none;">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="object" id="object_one"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_three"></div>
+            <div class="object" id="object_four"></div>
+            <div class="object" id="object_five"></div>
+            <div class="object" id="object_six"></div>
+            <div class="object" id="object_seven"></div>
+            <div class="object" id="object_eight"></div>
+            <div class="object" id="object_nine"></div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js?v=2.1.4"></script>
+<script src="js/bootstrap.min.js?v=3.3.5"></script>
+<script src="js/content.min.js?v=1.0.0"></script>
+<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/plugins/iCheck/icheck.min.js"></script>
+<script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+<script src="js/plugins/cropper/cropper.min.js"></script>
+<script src="js/plugins/jeditable/jquery.jeditable.js"></script>
+<script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+<script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+<script>
+    //checkbox
+    $(document).ready(function(){$(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})});
+    //datepicker
+    $(".input-group.date").datepicker({
+        todayBtn: "linked",
+        keyboardNavigation: !1,
+        forceParse: !1,
+        calendarWeeks: !0,
+        autoclose: !0
+    });
+    $(".input-daterange").datepicker({
+        keyboardNavigation: !1,
+        forceParse: !1,
+        autoclose: !0
+    });
+    //datetable
+    $(document).ready(function(){$(".dataTables-example").dataTable();var oTable=$("#editable").dataTable();oTable.$("td").editable("../example_ajax.php",{"callback":function(sValue,y){var aPos=oTable.fnGetPosition(this);oTable.fnUpdate(sValue,aPos[0],aPos[1])},"submitdata":function(value,settings){return{"row_id":this.parentNode.getAttribute("id"),"column":oTable.fnGetPosition(this)[2]}},"width":"90%","height":"100%"})});function fnClickAddRow(){$("#editable").dataTable().fnAddData(["Custom row","New row","New row","New row","New row"])};
+    //loading
+    function loadingFunc(){ $('#loading').css('display','block');}
+
+</script>
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+<!-- js loading -->
+<script type="text/javascript" src="js/loading-main.js"></script>
+</body>
+
+</html>

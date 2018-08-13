@@ -1,0 +1,38 @@
+<?php 
+Route::group(['namespace'=>'Admin'],function () {
+    Route::get('admin/user/userList','UserController@userList')->name('admin.user.userList')->middleware(["check.admin.login", "role.auth"]);
+    Route::get('admin/user/roleGroupList','UserController@roleGroupList')->name('admin.user.roleGroupList')->middleware(["check.admin.login", "role.auth"]);
+    Route::get('admin/user/roleGroupListSon','UserController@roleGroupListSon')->name('admin.user.roleGroupListSon')->middleware(["check.admin.login", "role.auth"]);
+    Route::get('admin/home/default/index','Home\DefaultController@index')->name('admin.home.default.index');
+    Route::get('admin/login/index','Login\LoginController@index')->name('admin.login.index')->middleware(["check.admin.login"]);
+    Route::get('admin/home/index','Home\HomeController@index')->name('admin.home.index')->middleware(["check.admin.login"]);
+    Route::get('admin/develop/index','DevelopController@index')->name('admin.develop.index')->middleware(["check.admin.login", "role.auth"]);
+    Route::post('admin/develop/getRouteData','DevelopController@getRouteData')->name('admin.develop.getRouteData')->middleware(["check.admin.login.ajax", "role.auth.ajax"]);
+    Route::get('admin/login/logout','Login\LoginController@logout')->name('admin.login.logout');
+    Route::post('admin/login/login','Login\LoginController@login')->name('admin.login.login');
+    Route::get('admin/develop/routeAdd','DevelopController@routeAdd')->name('admin.develop.routeAdd')->middleware(["check.admin.login", "role.auth"]);
+    Route::post('admin/develop/saveData','DevelopController@saveData')->name('admin.develop.saveData')->middleware(["check.admin.login.ajax", "role.auth.ajax"]);
+    Route::get('admin/user/roleList','UserController@roleList')->name('admin.user.roleList')->middleware(["check.admin.login", "role.auth"]);
+    Route::post('admin/user/getRoleListData','UserController@getRoleListData')->name('admin.user.getRoleListData')->middleware(["check.admin.login.ajax", "role.auth.ajax"]);
+    Route::get('admin/user/roleDetail','UserController@roleDetail')->name('admin.user.roleDetail')->middleware(["check.admin.login", "role.auth"]);
+    Route::get('admin/user/getRuteData','UserController@getRuteData')->name('admin.user.getRuteData');
+    Route::post('admin/user/roleDataSave','UserController@roleDataSave')->name('admin.user.roleDataSave')->middleware(["check.admin.login.ajax", "role.auth.ajax"]);
+    Route::get('admin/error/index','ErrorController@index')->name('admin.error.index');
+    Route::post('admin/user/getUserData','UserController@getUserData')->name('admin.user.getUserData')->middleware(["check.admin.login.ajax", "role.auth.ajax"]);
+    Route::get('admin/user/userDetailAdd','UserController@userDetailAdd')->name('admin.user.userDetailAdd')->middleware(["check.admin.login", "role.auth"]);
+    Route::post('admin/user/userDataSave','UserController@userDataSave')->name('admin.user.userDataSave')->middleware(["check.admin.login.ajax", "role.auth.ajax"]);
+    Route::post('admin/user/userDataDel','UserController@userDataDel')->name('admin.user.userDataDel')->middleware(["check.admin.login.ajax", "role.auth.ajax"]);
+    Route::get('admin/parameter/packages/index','Parameter\PackagesController@index')->name('admin.parameter.packages.index')->middleware(["check.admin.login", "role.auth"]);
+    Route::post('admin/parameter/packages/getData','Parameter\PackagesController@getData')->name('admin.parameter.packages.getData')->middleware(["check.admin.login.ajax", "role.auth.ajax"]);
+    Route::get('admin/parameter/packages/detail','Parameter\PackagesController@detail')->name('admin.parameter.packages.detail')->middleware(["check.admin.login", "role.auth"]);
+    Route::post('admin/parameter/packages/save','Parameter\PackagesController@save')->name('admin.parameter.packages.save')->middleware(["check.admin.login.ajax", "role.auth.ajax"]);
+    Route::post('admin/parameter/packages/del','Parameter\PackagesController@del')->name('admin.parameter.packages.del')->middleware(["check.admin.login.ajax", "role.auth.ajax"]);
+    Route::get('admin/parameter/currency/index','Parameter\CurrencyController@index')->name('admin.parameter.currency.index')->middleware(["check.admin.login", "role.auth"]);
+    Route::post('admin/parameter/currency/getData','Parameter\CurrencyController@getData')->name('admin.parameter.currency.getData')->middleware(["check.admin.login.ajax", "role.auth.ajax"]);
+    Route::get('admin/im/test/index','Im\TestContrller@index')->name('admin.im.test.index')->middleware(["check.admin.login", "role.auth"]);
+    Route::post('admin/im/test/getFriendList','Im\TestContrller@getFriendList')->name('admin.im.test.getFriendList');
+    Route::post('admin/im/test/uploadImg','Im\TestContrller@uploadImg')->name('admin.im.test.uploadImg');
+    Route::post('admin/im/test/uoloadFile','Im\TestContrller@uoloadFile')->name('admin.im.test.uoloadFile');
+    Route::post('admin/im/test/getGroupUserList','Im\TestContrller@getGroupUserList')->name('admin.im.test.getGroupUserList');
+    Route::post('admin/im/test/updateUserStatus','Im\TestContrller@updateUserStatus')->name('admin.im.test.updateUserStatus');
+});

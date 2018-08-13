@@ -1,0 +1,8 @@
+@media (min-width:768px){.form-inline .form-group{ display:inline-block;margin-bottom:10px;vertical-align:middle; }
+.input-group-addon.date-icon { background-color: #fff; border: 1px solid #E5E6E7; padding: 6px 12px; border-right: none; }
+.tit-header{ font-size:18px; color:#336699; padding:16px 10px; display:inline-block; }
+.form-inline.row-multi .form-group label{width:100px; text-align: right; }
+.form-inline.row-multi .form-group input,.form-inline.row-multi .form-group select{ width: 196px;}
+.form-inline.row-multi .form-group .date input{ width: 155px; }
+.btn-btm-block{ text-align: center; border-top: 1px dotted #ddd; padding-top: 15px; margin-top: 5px;}
+.ibox-tools{display: none;}
