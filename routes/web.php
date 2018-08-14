@@ -35,4 +35,8 @@ Route::group(['namespace'=>'Admin'],function () {
     Route::post('admin/im/test/uoloadFile','Im\TestContrller@uoloadFile')->name('admin.im.test.uoloadFile');
     Route::post('admin/im/test/getGroupUserList','Im\TestContrller@getGroupUserList')->name('admin.im.test.getGroupUserList');
     Route::post('admin/im/test/updateUserStatus','Im\TestContrller@updateUserStatus')->name('admin.im.test.updateUserStatus');
+    Route::post('admin/im/test/updateUserSign','Im\TestContrller@updateUserSign')->name('admin.im.test.updateUserSign');
+    Route::get('admin/im/test/chatLog','Im\TestContrller@chatLog')->name('admin.im.test.chatLog');
+    Route::get('admin/home/home/editAvatar','Home\HomeController@editAvatar')->name('admin.home.home.editAvatar');
+    Route::post('admin/home/home/uploadAvatar','Home\HomeController@uploadAvatar')->name('admin.home.home.uploadAvatar');
 });
