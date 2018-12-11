@@ -196,7 +196,7 @@
                         title:'添加',
                         area: ['700px', '500px'],
                         type: 2,
-                        content: '{{ route('admin.parameter.packages.detail') }}',
+                        content: '{{ route('admin.parameter.currency.detail') }}',
                         btn: ['保存', '关闭'],
                         closeBtn:2,
                         maxmin:true,
@@ -249,7 +249,7 @@
                             });
                             $.ajax({
                                 method: 'post',
-                                url: '{{ route('admin.parameter.packages.del') }}',
+                                url: '{{ route('admin.parameter.currency.del') }}',
                                 data: {
                                     _token:'{{ csrf_token() }}',
                                     idArray:idArray
@@ -290,7 +290,7 @@
                     title:'修改',
                     area: ['700px', '500px'],
                     type: 2,
-                    content: '{{ route('admin.parameter.packages.detail') }}?id='+primaryKey,
+                    content: '{{ route('admin.parameter.currency.detail') }}?id='+primaryKey,
                     btn: ['保存', '关闭'],
                     closeBtn:2,
                     maxmin:true,
@@ -341,7 +341,7 @@
                 var row = $('#tb_departments').bootstrapTable('getRowByUniqueId',index);
                 $.ajax({
                     method: 'post',
-                    url: '{{ route('admin.parameter.packages.save') }}',
+                    url: '{{ route('admin.parameter.currency.save') }}',
                     data: {
                         enable:obj.value,
                         id:row.id,

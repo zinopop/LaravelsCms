@@ -72,7 +72,7 @@
                                 </select>
                             </div>
                             <div class="form-inline" id="form-inline">
-                                <button class="btn btn-primary" type="button"><i class="fa fa-search"></i> 查询</button>
+                                <button class="btn btn-primary" type="button" id="select"><i class="fa fa-search"></i> 查询</button>
                                 <button class="btn btn-primary" type="button" id="add"><i class="fa fa-plus"></i> 添加</button>
                                 {{--<button class="btn btn-info" type="button"><i class="fa fa-paste"></i> 编辑</button>--}}
                                 <button class="btn btn-danger " type="button"><i class="fa fa-times"></i> <span class="bold">删除</span></button>
@@ -317,6 +317,10 @@
                             //body.find('input').val('Hi，我是从父页来的');
                         }
                     });
+                });
+                //查询按钮
+                $("#select").click(function () {
+                    $('#tb_departments').bootstrapTable('refresh');
                 });
             };
             return _buttonObj;

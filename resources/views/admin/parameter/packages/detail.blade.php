@@ -1,6 +1,6 @@
 @extends('layouts.admin.common')
 
-@section('title','用户详情')
+@section('title','详情')
 
 @section('header')
     @parent

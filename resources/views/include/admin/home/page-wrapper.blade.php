@@ -43,7 +43,7 @@
         <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="{{ route('admin.home.default.index') }}" frameborder="0" data-id="template.html" seamless></iframe>
     </div>
     <div class="footer">
-        <div class="pull-right">&copy; 2014-2015 <a href="http://www.zi-han.net/" target="_blank">zihan's blog</a>
+        <div class="pull-right">&copy; 2018-2020 <a href="https://github.com/zinopop" target="_blank">zino github</a>
         </div>
     </div>
 </div>

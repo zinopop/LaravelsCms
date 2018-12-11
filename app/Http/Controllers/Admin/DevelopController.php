@@ -22,8 +22,11 @@ class DevelopController extends BaseController{
      * 获取路由菜单数据
      * */
     public function getRouteData(Request $request){
-        $data = Route::offset($request->input('offset'))->limit($request->input('limit'))->get()->toArray();
-        $count = Route::select('id')->count();
+        $where = [
+            'is_del'=>'N'
+        ];
+        $data = Route::where($where)->offset($request->input('offset'))->limit($request->input('limit'))->get()->toArray();
+        $count = Route::where($where)->select('id')->count();
         return $this->responseBootData($data,$count);
     }
 

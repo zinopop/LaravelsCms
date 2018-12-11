@@ -16,7 +16,7 @@
     <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
         <div class="logo_box">
-            <h3>一万熊cms</h3>
+            <h3>{{ env('APP_NAME') }}</h3>
             <form id="admin-login" method="post">
                 <div class="input_outer">
                     <span class="u_user"></span>

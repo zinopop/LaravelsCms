@@ -68,6 +68,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'exportFile'=>[
+            'driver' => 'local',
+            'root' => storage_path('app/public/excel/file'),
+            'url' => env('APP_URL').'/storage/excel/file',
+            'visibility' => 'public',
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

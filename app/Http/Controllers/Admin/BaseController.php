@@ -28,6 +28,18 @@ class BaseController extends Controller{
     }
 
     /*
+     * 获取当前控制器内路由别名统一前缀
+     * */
+    public function getControllerPrefix(){
+        $preifx = "";
+        if(!empty(request()->route()->getAction())){
+            $preifxArray = request()->route()->getAction();
+            $preifx = preg_replace('/(.*)\.([^\/]*)/i', '$1', $preifxArray['as']);
+        }
+        return $preifx;
+    }
+
+    /*
      * bootstrap table返回数据处理
      * */
     public function responseBootData($data = [],$count = 0){

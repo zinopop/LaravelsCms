@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Redis;
 class RoleAuth{
     public function handle($request, Closure $next){
         $users = $request->session()->get('users');
-
         if($this->_getUserRouteList($users,$request->route()->getAction()['as'])){
             return $next($request);
         }else{
